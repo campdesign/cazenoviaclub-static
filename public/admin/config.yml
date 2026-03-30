@@ -1,0 +1,67 @@
+backend:
+  name: git-gateway
+  branch: main
+
+media_folder: "public/images"
+public_folder: "/images"
+
+collections:
+  - name: "pages"
+    label: "Pages"
+    files:
+      - name: "home"
+        label: "Homepage"
+        file: "src/content/home.json"
+        fields:
+          - { label: "Welcome Heading", name: "welcomeHeading", widget: "string", default: "Welcome" }
+          - { label: "Welcome Text (paragraph 1)", name: "welcomeText1", widget: "text" }
+          - { label: "Welcome Text (paragraph 2)", name: "welcomeText2", widget: "text" }
+
+      - name: "youth"
+        label: "Youth Program"
+        file: "src/content/youth.json"
+        fields:
+          - { label: "Intro Paragraph", name: "intro", widget: "text" }
+          - { label: "Schedule Days", name: "days", widget: "string" }
+          - { label: "Enrollment Options", name: "enrollment", widget: "string" }
+          - { label: "Lunch Policy", name: "lunch", widget: "text" }
+          - { label: "Additional Info", name: "extra", widget: "text", required: false }
+
+      - name: "tennis"
+        label: "Tennis Page"
+        file: "src/content/tennis.json"
+        fields:
+          - { label: "Intro Paragraph 1", name: "intro1", widget: "text" }
+          - { label: "Intro Paragraph 2", name: "intro2", widget: "text" }
+
+  - name: "staff"
+    label: "Staff"
+    folder: "src/content/staff"
+    create: true
+    slug: "{{slug}}"
+    fields:
+      - { label: "Name", name: "name", widget: "string" }
+      - { label: "Title", name: "title", widget: "string" }
+      - { label: "Photo", name: "image", widget: "image" }
+      - { label: "Bio", name: "bio", widget: "text" }
+      - { label: "Order", name: "order", widget: "number", default: 99 }
+
+  - name: "board"
+    label: "Board of Governors"
+    folder: "src/content/board"
+    create: true
+    slug: "{{slug}}"
+    fields:
+      - { label: "Name", name: "name", widget: "string" }
+      - { label: "Role / Title", name: "role", widget: "string" }
+      - { label: "Order", name: "order", widget: "number", default: 99 }
+
+  - name: "settings"
+    label: "Site Settings"
+    files:
+      - name: "general"
+        label: "General Settings"
+        file: "src/content/settings.json"
+        fields:
+          - { label: "Google Calendar Embed URL", name: "calendarUrl", widget: "string", hint: "Paste the full iframe src URL from your Google Calendar embed code." }
+          - { label: "Club Tagline", name: "tagline", widget: "string", default: "Tennis & Social Club" }

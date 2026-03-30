@@ -1,0 +1,84 @@
+---
+import Layout from '../../layouts/Layout.astro';
+---
+
+<Layout title="Youth Program" description="Cazenovia Club summer youth tennis program for juniors of all skill levels.">
+
+  <!-- ══ HEADER ════════════════════════════════════════════════════ -->
+  <div class="relative h-[50vh] min-h-[340px] overflow-hidden flex items-end">
+    <img
+      src="/images/youthprogram.jpg"
+      alt="Youth tennis program at the Cazenovia Club"
+      class="absolute inset-0 w-full h-full object-cover object-center"
+    />
+    <div class="absolute inset-0 bg-gradient-to-t from-[#1B2A4A]/80 via-[#1B2A4A]/30 to-transparent"></div>
+    <div class="relative z-10 max-w-4xl mx-auto px-6 pb-12 w-full">
+      <p style="font-family:'Montserrat',sans-serif;font-size:0.65rem;letter-spacing:0.2em;" class="text-[#C9A96E] uppercase mb-3">Cazenovia Club</p>
+      <h1 style="font-family:'Cormorant Garamond',serif;font-size:clamp(2.2rem,5vw,3.5rem);font-weight:300;" class="text-white">Youth Program</h1>
+    </div>
+  </div>
+
+
+  <!-- ══ INTRO ══════════════════════════════════════════════════════ -->
+  <section class="max-w-3xl mx-auto px-6 py-20 text-center">
+    <div class="flex items-center gap-4 justify-center mb-10">
+      <div class="h-px w-16 bg-[#C9A96E]"></div>
+      <div class="w-1 h-1 rounded-full bg-[#C9A96E]"></div>
+      <div class="h-px w-16 bg-[#C9A96E]"></div>
+    </div>
+    <p style="font-family:'Cormorant Garamond',serif;font-size:1.15rem;font-weight:300;line-height:1.9;" class="text-[#3D3835]/75 mb-6">
+      The Cazenovia Club Youth Tennis Program runs Monday, Wednesday, and Friday throughout the summer. Our instructors have redesigned the schedule to maximize playing opportunities and court time for every participant.
+    </p>
+    <p style="font-family:'Cormorant Garamond',serif;font-size:1.15rem;font-weight:300;line-height:1.9;" class="text-[#3D3835]/75">
+      Participants may enroll weekly, by individual session, or for the entire summer season — whatever works best for your family's schedule.
+    </p>
+  </section>
+
+
+  <!-- ══ PROGRAM DETAILS ════════════════════════════════════════════ -->
+  <section class="max-w-3xl mx-auto px-6 pb-20">
+    <div class="border-t border-[#C9A96E]/20 pt-14">
+      <p style="font-family:'Montserrat',sans-serif;font-size:0.65rem;letter-spacing:0.2em;" class="text-[#C9A96E] uppercase mb-8">Program Details</p>
+
+      <div class="space-y-6">
+        {[
+          { label: "Days", value: "Monday, Wednesday & Friday" },
+          { label: "Duration", value: "Throughout the summer season" },
+          { label: "Enrollment", value: "Weekly, per session, or full summer" },
+          { label: "Lunch", value: "One lunch option provided. Parents of children with specific dietary preferences are welcome to send a packed lunch." },
+        ].map(item => (
+          <div class="flex gap-8 items-baseline border-b border-[#C9A96E]/15 pb-6">
+            <span style="font-family:'Montserrat',sans-serif;font-size:0.6rem;letter-spacing:0.12em;min-width:6rem;" class="text-[#C9A96E]/70 uppercase shrink-0">{item.label}</span>
+            <p style="font-family:'Cormorant Garamond',serif;font-size:1.1rem;font-weight:300;line-height:1.8;" class="text-[#3D3835]/75">{item.value}</p>
+          </div>
+        ))}
+      </div>
+
+      <div class="mt-14">
+        <p style="font-family:'Montserrat',sans-serif;font-size:0.65rem;letter-spacing:0.2em;" class="text-[#C9A96E] uppercase mb-6">Registration</p>
+        <p style="font-family:'Cormorant Garamond',serif;font-size:1.1rem;font-weight:300;line-height:1.9;" class="text-[#3D3835]/75 mb-8">
+          Please submit registration forms early to allow staff adequate time for planning and supply procurement. For questions about the youth program, contact the club directly.
+        </p>
+        <a
+          href="/reservations/"
+          class="btn-primary inline-block"
+        >
+          Contact Us to Register
+        </a>
+
+        <div class="mt-14 border-t border-[#C9A96E]/20 pt-10">
+          <p style="font-family:'Cormorant Garamond',serif;font-size:1.1rem;font-weight:300;line-height:1.9;" class="text-[#3D3835]/75 mb-6">
+            Please follow the links for more information and to access the forms, and feel free to reach out to me with any questions. We are looking forward to seeing all of your kids back on the courts and on the grounds this summer!
+          </p>
+          <p style="font-family:'Cormorant Garamond',serif;font-size:1.05rem;font-weight:300;line-height:1.9;" class="text-[#3D3835]/75">
+            Thank you!<br />
+            <span class="text-[#1B2A4A]">Casey Frazee</span><br />
+            <a href="tel:3154203388" class="text-[#1B2A4A] hover:text-[#C9A96E] transition-colors">(315) 420-3388</a><br />
+            <a href="mailto:casey.frazee@me.com" class="text-[#1B2A4A] hover:text-[#C9A96E] transition-colors">casey.frazee@me.com</a>
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+</Layout>

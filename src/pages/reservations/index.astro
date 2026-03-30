@@ -1,0 +1,96 @@
+---
+import Layout from '../../layouts/Layout.astro';
+---
+
+<Layout title="Reservations" description="Reservations and dress code for the Cazenovia Club. For members only.">
+
+  <!-- ══ HEADER ════════════════════════════════════════════════════ -->
+  <div class="bg-[#1B2A4A] py-16 text-center">
+    <p style="font-family:'Montserrat',sans-serif;font-size:0.65rem;letter-spacing:0.2em;" class="text-[#C9A96E] uppercase mb-3">Members Only</p>
+    <h1 style="font-family:'Cormorant Garamond',serif;font-size:clamp(2rem,4vw,3rem);font-weight:300;" class="text-white">Reservations</h1>
+  </div>
+
+
+  <section class="max-w-5xl mx-auto px-6 py-20 grid grid-cols-1 md:grid-cols-2 gap-16">
+
+    <!-- ══ RESERVATIONS ══════════════════════════════════════════ -->
+    <div>
+      <p style="font-family:'Montserrat',sans-serif;font-size:0.65rem;letter-spacing:0.2em;" class="text-[#C9A96E] uppercase mb-8">Making a Reservation</p>
+
+      <p style="font-family:'Cormorant Garamond',serif;font-size:1.1rem;font-weight:300;line-height:1.9;" class="text-[#3D3835]/75 mb-8">
+        The preferred way to reserve is through our online reservations system. You may also sign the sheet at the Club House, email, or phone.
+      </p>
+
+      <!-- resOS Booking widget -->
+      <div class="mb-10 border border-[#C9A96E]/30 rounded-sm p-6 bg-white/50">
+        <p style="font-family:'Montserrat',sans-serif;font-size:0.6rem;letter-spacing:0.18em;" class="text-[#C9A96E] uppercase mb-4">Reserve Online</p>
+        <a class="resos-booking-widget" href="https://cazenoviaclub.resos.com/booking" data-lang="en" data-restaurant-id="gn5cEooqn4Kg6caLF" data-domain="cazenoviaclub.resos.com">Book a table</a>
+        <div id="resos-booking-script-3" style="text-align:center;opacity:0.4;font-size:70%;margin-top:10px;">
+          <a target="_blank" rel="noopener" href="https://resos.com/feature/table-booking-app/?utm_source=restaurantsite&utm_medium=bookingwidget&utm_term=Restaurant-booking-app">Restaurant booking app by resOS</a>
+        </div>
+        <script type="text/javascript" is:inline>{(function() {const scr=document.createElement("script");scr.src="https://cazenoviaclub.resos.com/embed/booking/widget.js?ts="+new Date().getTime();document.getElementById("resos-booking-script-3").appendChild(scr);})()</script>
+      </div>
+      <!-- resOS Booking widget END -->
+
+      <div style="font-family:'Cormorant Garamond',serif;font-size:1.05rem;font-weight:300;line-height:1.9;" class="text-[#3D3835]/70 mb-10 space-y-1">
+        <p><a href="mailto:info@cazenoviaclub.org" class="text-[#1B2A4A] hover:text-[#C9A96E] transition-colors">info@cazenoviaclub.org</a></p>
+        <p><a href="tel:3156553131" class="text-[#1B2A4A] hover:text-[#C9A96E] transition-colors">315.655.3131</a></p>
+      </div>
+
+      <div class="border-t border-[#C9A96E]/20 pt-8 mb-8">
+        <h3 style="font-family:'Cormorant Garamond',serif;font-size:1.3rem;font-weight:300;" class="text-[#1B2A4A] mb-5">Deadlines</h3>
+        <div class="space-y-4">
+          <div class="flex gap-4 items-start">
+            <div class="w-1 h-1 rounded-full bg-[#C9A96E] mt-3 shrink-0"></div>
+            <p style="font-family:'Cormorant Garamond',serif;font-size:1.05rem;font-weight:300;line-height:1.8;" class="text-[#3D3835]/75">
+              <strong class="font-400 text-[#1B2A4A]">Wednesday evening dinners</strong> — reservations must be made by noon on Monday.
+            </p>
+          </div>
+          <div class="flex gap-4 items-start">
+            <div class="w-1 h-1 rounded-full bg-[#C9A96E] mt-3 shrink-0"></div>
+            <p style="font-family:'Cormorant Garamond',serif;font-size:1.05rem;font-weight:300;line-height:1.8;" class="text-[#3D3835]/75">
+              <strong class="font-400 text-[#1B2A4A]">Saturday evening dinners</strong> — reservations must be made by Wednesday at noon.
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <p style="font-family:'Cormorant Garamond',serif;font-size:0.95rem;font-weight:300;line-height:1.8;" class="text-[#3D3835]/50 italic border-t border-[#C9A96E]/20 pt-6">
+        Any reservation not cancelled before the deadline will be charged to the member.
+      </p>
+    </div>
+
+
+    <!-- ══ DRESS CODE ══════════════════════════════════════════════ -->
+    <div>
+      <p style="font-family:'Montserrat',sans-serif;font-size:0.65rem;letter-spacing:0.2em;" class="text-[#C9A96E] uppercase mb-8">Club Dress Code</p>
+
+      <div class="space-y-8">
+
+        <div class="border-b border-[#C9A96E]/20 pb-8">
+          <h3 style="font-family:'Cormorant Garamond',serif;font-size:1.2rem;font-weight:300;" class="text-[#1B2A4A] mb-3">Saturday Dinner</h3>
+          <p style="font-family:'Cormorant Garamond',serif;font-size:1.05rem;font-weight:300;line-height:1.9;" class="text-[#3D3835]/70">
+            Formal dress is required. Black tie for men; formal or dressy cocktail attire for women. See calendar for exceptions.
+          </p>
+        </div>
+
+        <div class="border-b border-[#C9A96E]/20 pb-8">
+          <h3 style="font-family:'Cormorant Garamond',serif;font-size:1.2rem;font-weight:300;" class="text-[#1B2A4A] mb-3">Wednesday Dinner &amp; Labor Day Luncheon</h3>
+          <p style="font-family:'Cormorant Garamond',serif;font-size:1.05rem;font-weight:300;line-height:1.9;" class="text-[#3D3835]/70">
+            Jacket and tie for men and boys. Dress, suits, or pant outfits for women and girls. See calendar for exceptions. Cargo shorts and denim are never appropriate. Male members are required to keep their jackets on while dining at the Club.
+          </p>
+        </div>
+
+        <div class="border-b border-[#C9A96E]/20 pb-8">
+          <h3 style="font-family:'Cormorant Garamond',serif;font-size:1.2rem;font-weight:300;" class="text-[#1B2A4A] mb-3">Picnics &amp; Thursday Evenings</h3>
+          <p style="font-family:'Cormorant Garamond',serif;font-size:1.05rem;font-weight:300;line-height:1.9;" class="text-[#3D3835]/70">
+            Casual dress.
+          </p>
+        </div>
+
+      </div>
+    </div>
+
+  </section>
+
+</Layout>

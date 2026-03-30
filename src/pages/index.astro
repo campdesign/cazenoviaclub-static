@@ -1,0 +1,232 @@
+---
+import Layout from '../layouts/Layout.astro';
+---
+
+<Layout title="Welcome">
+
+  <!-- ══ HERO ══════════════════════════════════════════════════════ -->
+  <section class="relative h-[60vh] min-h-[360px] max-h-[540px] flex items-end overflow-hidden">
+
+    <!-- Crossfade slideshow -->
+    <div class="absolute inset-0">
+      <img src="/images/cover1.jpg" alt="Cazenovia Club" class="hero-slide" style="animation-delay:0s;" />
+      <img src="/images/cover2.jpg" alt="Cazenovia Club" class="hero-slide" style="animation-delay:-15s;" />
+      <img src="/images/cover3.jpg" alt="Cazenovia Club" class="hero-slide" style="animation-delay:-10s;" />
+      <img src="/images/cover5.jpg" alt="Cazenovia Club" class="hero-slide" style="animation-delay:-5s;" />
+    </div>
+
+    <!-- Gradient: light at top (for nav legibility), dark at bottom -->
+    <div class="absolute inset-0 bg-gradient-to-b from-black/10 via-transparent to-black/70"></div>
+
+    <div class="relative z-10 w-full max-w-6xl mx-auto px-6 pb-16 md:pb-24">
+      <p class="label text-[#C9A96E] mb-4 tracking-widest">Cazenovia Lake &nbsp;&middot;&nbsp; Est. 1866</p>
+      <h1 style="font-family:'Cormorant Garamond',serif;font-size:clamp(2.8rem,6vw,5.5rem);font-weight:300;line-height:1.1;letter-spacing:0.02em;" class="text-white mb-4">
+        The Cazenovia Club
+      </h1>
+      <p style="font-family:'Cormorant Garamond',serif;font-size:clamp(1.2rem,2.5vw,1.8rem);font-weight:300;letter-spacing:0.08em;" class="text-white/75 italic">
+        Social and Tennis
+      </p>
+    </div>
+  </section>
+
+
+  <!-- ══ INTRO ═════════════════════════════════════════════════════ -->
+  <section class="max-w-3xl mx-auto px-6 py-24 text-center">
+    <p class="label text-[#C9A96E] mb-8 tracking-widest">Welcome</p>
+    <h2 style="font-family:'Cormorant Garamond',serif;font-size:clamp(2rem,4vw,3rem);font-weight:300;line-height:1.25;" class="text-[#1B2A4A] mb-8">
+      A Society Created for the<br /><em>Hale Fellowship of Its Members</em>
+    </h2>
+    <div class="flex items-center gap-4 justify-center mb-10">
+      <div class="h-px w-16 bg-[#C9A96E]"></div>
+      <div class="w-1 h-1 rounded-full bg-[#C9A96E]"></div>
+      <div class="h-px w-16 bg-[#C9A96E]"></div>
+    </div>
+    <p style="font-family:'Cormorant Garamond',serif;font-size:1.2rem;font-weight:300;line-height:1.9;" class="text-[#3D3835]/80 mb-6">
+      Since 1866, the Cazenovia Club has gathered members on the shores of Cazenovia Lake —
+      for tennis, long summer afternoons on the water, and evenings that range
+      from easy and convivial to gloriously black-tie.
+    </p>
+    <p style="font-family:'Cormorant Garamond',serif;font-size:1.2rem;font-weight:300;line-height:1.9;" class="text-[#3D3835]/80">
+      Our home is the original Owahgena boathouse, built in 1885 on the lake's edge —
+      its stained glass windows, timber rafters, and upstairs dining room
+      (the wooden tables still in use) unchanged in spirit across thirteen decades.
+    </p>
+  </section>
+
+
+  <!-- ══ THE BOATHOUSE — image + history ═══════════════════════════ -->
+  <section class="bg-[#1B2A4A]">
+    <div class="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-2">
+
+      <!-- Boathouse image — left -->
+      <img
+        src="/images/Boathouse exterior.jpg"
+        alt="The Cazenovia Club boathouse"
+        class="h-[480px] md:h-full w-full object-cover"
+      />
+
+      <!-- Text — right -->
+      <div class="flex flex-col justify-center px-10 md:px-16 py-20">
+        <p class="label text-[#C9A96E] mb-8">Our History</p>
+        <h2 style="font-family:'Cormorant Garamond',serif;font-size:2.4rem;font-weight:300;line-height:1.2;" class="text-white mb-8">
+          The Owahgena<br />Boathouse, 1885
+        </h2>
+        <div class="h-px w-12 bg-[#C9A96E] mb-8"></div>
+        <p style="font-family:'Cormorant Garamond',serif;font-size:1.1rem;font-weight:300;line-height:1.9;" class="text-white/60 mb-6">
+          Our clubhouse began as the Owahgena, built in 1885 by Wolters Ledyard as
+          "a boathouse, where boats can be cared for, and parties of ladies and children
+          can embark — where subscribers can read, write, enjoy the lake scenery
+          and have parties, entertainments and illuminations."
+        </p>
+        <p style="font-family:'Cormorant Garamond',serif;font-size:1.1rem;font-weight:300;line-height:1.9;" class="text-white/60">
+          In 1916, the Cazenovia Club acquired the building. The formal opening
+          was April 17, 1917. A *Times* of London correspondent had already compared
+          Cazenovia favorably to Bar Harbor, Newport, and Saratoga.
+          The wooden tables in the upstairs dining room are still in use.
+        </p>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ══ DINING ════════════════════════════════════════════════════ -->
+  <section>
+    <!-- Full-bleed dining image -->
+    <div class="relative h-[55vh] min-h-[400px] overflow-hidden">
+      <img
+        src="/images/dining.jpg"
+        alt="Dining at the Cazenovia Club"
+        class="absolute inset-0 w-full h-full object-cover"
+      />
+    </div>
+
+    <!-- Dining text, offset upward over image -->
+    <div class="max-w-6xl mx-auto px-6">
+      <div class="bg-[#FAF7F2] max-w-xl -mt-20 relative z-10 px-10 py-12 shadow-lg border-t-2 border-[#C9A96E]">
+        <p class="label text-[#C9A96E] mb-6">Dining</p>
+        <h2 style="font-family:'Cormorant Garamond',serif;font-size:2.2rem;font-weight:300;line-height:1.2;" class="text-[#1B2A4A] mb-6">
+          From Garden Lunches<br />to Black-Tie Evenings
+        </h2>
+        <p style="font-family:'Cormorant Garamond',serif;font-size:1.1rem;font-weight:300;line-height:1.9;" class="text-[#3D3835]/75 mb-4">
+          The upstairs dining room has been the heart of the Club's social life since 1885.
+          Its wooden tables — set for lake fêtes in Ledyard's day, for President Cleveland's visit
+          in 1887, for a century of black-tie summers — are still in use today.
+        </p>
+        <p style="font-family:'Cormorant Garamond',serif;font-size:1.1rem;font-weight:300;line-height:1.9;" class="text-[#3D3835]/75">
+          Our exceptional professional staff brings regional ingredients and classical technique
+          to every occasion — casual post-match lunches to formal evenings under the rafters.
+        </p>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ══ TENNIS ════════════════════════════════════════════════════ -->
+  <section class="max-w-6xl mx-auto px-6 py-28">
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-16 items-center">
+
+      <div>
+        <p class="label text-[#C9A96E] mb-8">On the Courts</p>
+        <h2 style="font-family:'Cormorant Garamond',serif;font-size:2.4rem;font-weight:300;line-height:1.2;" class="text-[#1B2A4A] mb-8">
+          Three Courts Waiting<br /><em>All Summer Long</em>
+        </h2>
+        <div class="h-px w-12 bg-[#C9A96E] mb-8"></div>
+        <p style="font-family:'Cormorant Garamond',serif;font-size:1.1rem;font-weight:300;line-height:1.9;" class="text-[#3D3835]/75 mb-6">
+          Tennis has been played at the Club since 1888. Members of that era arrived
+          in cutaway coats and stiff hats; today they arrive in rather less, but the
+          spirit of a good match — and a good argument afterward — endures unchanged.
+        </p>
+        <p style="font-family:'Cormorant Garamond',serif;font-size:1.1rem;font-weight:300;line-height:1.9;" class="text-[#3D3835]/75 mb-10">
+          Our courts welcome players of every level, with certified pro
+          Dave Garzia and newly available pickleball.
+        </p>
+        <a href="/events/tennis/" class="btn-primary">Tennis &amp; Instruction</a>
+      </div>
+
+      <img
+        src="/images/tennis.jpg"
+        alt="Tennis at the Cazenovia Club"
+        class="h-[420px] w-full object-cover rounded-sm"
+      />
+    </div>
+  </section>
+
+
+  <!-- ══ SOCIAL TRIPTYCH ════════════════════════════════════════════ -->
+  <section class="bg-[#1B2A4A] py-24">
+    <div class="max-w-6xl mx-auto px-6">
+      <div class="text-center mb-16">
+        <p class="label text-[#C9A96E] mb-6">The Social Season</p>
+        <h2 style="font-family:'Cormorant Garamond',serif;font-size:2.4rem;font-weight:300;" class="text-white">
+          Every Occasion, Beautifully Observed
+        </h2>
+      </div>
+
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-px bg-[#C9A96E]/20">
+
+        <!-- Card 1 -->
+        <div class="bg-[#1B2A4A] flex flex-col">
+          <img src="/images/formal.jpg" alt="Black-tie evening at the Cazenovia Club" class="h-56 w-full object-cover" />
+          <div class="p-8">
+            <h3 style="font-family:'Cormorant Garamond',serif;font-size:1.5rem;font-weight:300;" class="text-white mb-3">Black-Tie Events</h3>
+            <p style="font-family:'Cormorant Garamond',serif;font-size:1rem;font-weight:300;line-height:1.8;" class="text-white/55">
+              From our annual gala to intimate formal dinners — evenings that demand your finest.
+            </p>
+          </div>
+        </div>
+
+        <!-- Card 2 -->
+        <div class="bg-[#1B2A4A] flex flex-col">
+          <img src="/images/themed.JPG" alt="Social evening at the Cazenovia Club" class="h-56 w-full object-cover" />
+          <div class="p-8">
+            <h3 style="font-family:'Cormorant Garamond',serif;font-size:1.5rem;font-weight:300;" class="text-white mb-3">Social Evenings</h3>
+            <p style="font-family:'Cormorant Garamond',serif;font-size:1rem;font-weight:300;line-height:1.8;" class="text-white/55">
+              International Night, themed mixers, date nights with childcare — the calendar is never dull.
+            </p>
+          </div>
+        </div>
+
+        <!-- Card 3 -->
+        <div class="bg-[#1B2A4A] flex flex-col">
+          <img src="/images/summer.jpg" alt="Summer on Cazenovia Lake" class="h-56 w-full object-cover" />
+          <div class="p-8">
+            <h3 style="font-family:'Cormorant Garamond',serif;font-size:1.5rem;font-weight:300;" class="text-white mb-3">Lake &amp; Summer</h3>
+            <p style="font-family:'Cormorant Garamond',serif;font-size:1rem;font-weight:300;line-height:1.8;" class="text-white/55">
+              Swimming, boating, and long afternoons on the water — summer as it was meant to be spent.
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <div class="text-center mt-14">
+        <a href="/events/calendar/" class="btn-light">View the Events Calendar</a>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ══ YOUTH PROGRAM — quiet closer ══════════════════════════════ -->
+  <section class="max-w-6xl mx-auto px-6 py-28 grid grid-cols-1 md:grid-cols-2 gap-16 items-center">
+
+    <img
+      src="/images/youthprogram.jpg"
+      alt="Youth tennis program at the Cazenovia Club"
+      class="h-[380px] w-full object-cover rounded-sm"
+    />
+
+    <div>
+      <p class="label text-[#C9A96E] mb-8">Youth Program</p>
+      <h2 style="font-family:'Cormorant Garamond',serif;font-size:2.4rem;font-weight:300;line-height:1.2;" class="text-[#1B2A4A] mb-8">
+        The Next Generation<br />of Members
+      </h2>
+      <div class="h-px w-12 bg-[#C9A96E] mb-8"></div>
+      <p style="font-family:'Cormorant Garamond',serif;font-size:1.1rem;font-weight:300;line-height:1.9;" class="text-[#3D3835]/75 mb-10">
+        Our summer youth tennis program runs Monday, Wednesday, and Friday throughout the season.
+        Designed to maximize court time and build a genuine love of the game — for beginners
+        and returning players alike.
+      </p>
+      <a href="/events/youth-program/" class="btn-primary">Youth Program Details</a>
+    </div>
+  </section>
+
+</Layout>

@@ -1,0 +1,61 @@
+---
+import Layout from '../../layouts/Layout.astro';
+
+const staff = [
+  {
+    name: "Tina MacPherson",
+    title: "Manager",
+    image: "/images/TinaMac-855x1024.png",
+    bio: "Tina is an entrepreneur and hospitality professional who grew up in her father's restaurant in Hancock, NY. She earned a degree in Hotel and Restaurant Management, launched a successful salsa business in 2008 (sold in 2022), and spent seven years as assistant dining director at Cazenovia College. She was appointed Club Manager in 2023 and brings a warm, guest-first approach to everything she does."
+  },
+  {
+    name: "Chef Brandon Quilty",
+    title: "Chef",
+    image: "/images/BrandonQuilty-1-855x1024.jpg",
+    bio: "A Cazenovia native with over 10 years of culinary experience, Chef Brandon previously worked at acclaimed establishments including the Brewster Inn, Colgate University, and The Lincklaen House. He emphasizes quality, hospitality, and a sense of belonging through regional ingredients and classic technique — crafting well-executed, approachable dishes that reflect both the season and the community."
+  },
+  {
+    name: "Colleen Pepe",
+    title: "Chef",
+    image: "/images/ColleenPepe.jpg",
+    bio: "Colleen spent more than twenty years at the Cazenovia Club — first as front-of-house and later as head chef — before leaving to feed the Jesuits at Le Moyne College. We are very happy to have her back where she belongs."
+  },
+  {
+    name: "Dave Garzia",
+    title: "Tennis Professional",
+    image: "/images/IMG_2904-769x1024.jpg",
+    bio: "Dave is a certified instructor with 10 years of teaching experience and degrees in exercise science from OCC and SUNY Cortland. He holds certifications including USPTA (2014), International Coaches Institute Level 2 (2020), NASM Performance Enhancing Specialist, and ISSA Personal Trainer. Dave works with players of all skill levels, integrating both physical and mental conditioning into his comprehensive approach to tennis development."
+  }
+];
+---
+
+<Layout title="Staff" description="Meet the dedicated staff of the Cazenovia Club.">
+
+  <!-- ══ HEADER ════════════════════════════════════════════════════ -->
+  <div class="bg-[#1B2A4A] py-16 text-center">
+    <p style="font-family:'Montserrat',sans-serif;font-size:0.65rem;letter-spacing:0.2em;" class="text-[#C9A96E] uppercase mb-3">Cazenovia Club</p>
+    <h1 style="font-family:'Cormorant Garamond',serif;font-size:clamp(2rem,4vw,3rem);font-weight:300;" class="text-white">Our Staff</h1>
+    <p style="font-family:'Cormorant Garamond',serif;font-size:1rem;font-weight:300;" class="text-white/50 mt-3 italic">The people behind the Cazenovia Club experience</p>
+  </div>
+
+  <section class="max-w-4xl mx-auto px-6 py-20 space-y-20">
+    {staff.map((member, i) => (
+      <div class={`flex flex-col ${i % 2 === 1 ? 'md:flex-row-reverse' : 'md:flex-row'} gap-12 items-start`}>
+        <div class="shrink-0">
+          <img
+            src={member.image}
+            alt={member.name}
+            class="w-52 h-64 object-cover shadow-md"
+          />
+        </div>
+        <div class="pt-2">
+          <p style="font-family:'Montserrat',sans-serif;font-size:0.6rem;letter-spacing:0.2em;" class="text-[#C9A96E] uppercase mb-3">{member.title}</p>
+          <h2 style="font-family:'Cormorant Garamond',serif;font-size:1.8rem;font-weight:300;" class="text-[#1B2A4A] mb-5">{member.name}</h2>
+          <div class="w-8 h-px bg-[#C9A96E] mb-6"></div>
+          <p style="font-family:'Cormorant Garamond',serif;font-size:1.05rem;font-weight:300;line-height:1.9;" class="text-[#3D3835]/75">{member.bio}</p>
+        </div>
+      </div>
+    ))}
+  </section>
+
+</Layout>

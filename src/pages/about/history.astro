@@ -1,0 +1,240 @@
+---
+import Layout from '../../layouts/Layout.astro';
+const h = "/images/history";
+---
+
+<Layout title="Our History" description="A brief history of the Cazenovia Club, founded 1866 on the shores of Cazenovia Lake.">
+
+  <!-- ══ PAGE HEADER ═══════════════════════════════════════════════ -->
+  <div class="relative h-72 overflow-hidden flex items-end">
+    <img
+      src={`${h}/Owahgena--Caz%20Club%20c1895%201.jpg`}
+      alt="The Owahgena Club, c. 1895"
+      class="absolute inset-0 w-full h-full object-cover object-top"
+    />
+    <div class="absolute inset-0 bg-[#1B2A4A]/55"></div>
+    <div class="relative z-10 max-w-4xl mx-auto px-6 pb-10 w-full">
+      <p style="font-family:'Montserrat',sans-serif;font-size:0.65rem;letter-spacing:0.2em;" class="text-[#C9A96E] uppercase mb-2">Est. 1866</p>
+      <h1 style="font-family:'Cormorant Garamond',serif;font-size:clamp(2rem,4vw,3.2rem);font-weight:300;" class="text-white">A History of the Cazenovia Club</h1>
+    </div>
+  </div>
+
+
+  <!-- ══ INTRO QUOTE ═══════════════════════════════════════════════ -->
+  <section class="max-w-3xl mx-auto px-6 py-20 text-center">
+    <div class="flex items-center gap-4 justify-center mb-10">
+      <div class="h-px w-16 bg-[#C9A96E]"></div>
+      <div class="w-1 h-1 rounded-full bg-[#C9A96E]"></div>
+      <div class="h-px w-16 bg-[#C9A96E]"></div>
+    </div>
+    <blockquote style="font-family:'Cormorant Garamond',serif;font-size:clamp(1.3rem,2.5vw,1.7rem);font-weight:300;line-height:1.7;" class="text-[#1B2A4A] italic mb-6">
+      "The Club, whose weathered tower keeps silent watch over the 'lake of the yellow perch,' represents nothing so much as the determination of its wardens to maintain a sanctuary: a place of quiet resort in which to retire from the commotion of modern life."
+    </blockquote>
+    <p style="font-family:'Montserrat',sans-serif;font-size:0.65rem;letter-spacing:0.15em;" class="text-[#C9A96E] uppercase">T. Hume Laidman, 2013</p>
+  </section>
+
+
+  <!-- ══ SECTION 1: THE OWAHGENA ════════════════════════════════════ -->
+  <section class="bg-[#1B2A4A]">
+    <div class="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-2">
+
+      <div class="px-12 py-16 flex flex-col justify-center order-2 md:order-1">
+        <p style="font-family:'Montserrat',sans-serif;font-size:0.65rem;letter-spacing:0.2em;" class="text-[#C9A96E] uppercase mb-6">1866 &ndash; 1885</p>
+        <h2 style="font-family:'Cormorant Garamond',serif;font-size:2.2rem;font-weight:300;line-height:1.2;" class="text-white mb-6">The Owahgena</h2>
+        <div class="h-px w-10 bg-[#C9A96E] mb-6"></div>
+        <p style="font-family:'Cormorant Garamond',serif;font-size:1.1rem;font-weight:300;line-height:1.9;" class="text-white/70 mb-5">
+          On June 20, 1866, Lamburtus Wolters Ledyard founded the Owahgena Lake Club on the shores of Cazenovia Lake. Nearly twenty years later, in the summer of 1885, he built the clubhouse that still stands today — constructed for $5,000 in the Queen Anne style, with rustic interiors, boat slips for thirty-five craft, and a three-story tower concealing a water tank.
+        </p>
+        <p style="font-family:'Cormorant Garamond',serif;font-size:1.1rem;font-weight:300;line-height:1.9;" class="text-white/70">
+          Ledyard described it with characteristic modesty: <em>"a simple place that may gratify the tastes and serve the convenience of those who like quiet ways, and do not weary of the refined surroundings that form an especial charm of country life."</em>
+        </p>
+      </div>
+
+      <div class="order-1 md:order-2 h-[420px] md:h-auto overflow-hidden">
+        <img
+          src={`${h}/p%20101.jpg`}
+          alt="The Owahgena, 1885"
+          class="w-full h-full object-cover"
+        />
+      </div>
+
+    </div>
+  </section>
+
+
+  <!-- ══ SECTION 2: PRESIDENT CLEVELAND & LAKE FÊTES ════════════════ -->
+  <section class="max-w-6xl mx-auto px-6 py-20 grid grid-cols-1 md:grid-cols-2 gap-16 items-center">
+
+    <div class="h-[420px] overflow-hidden rounded-sm">
+      <img
+        src={`${h}/skiff.jpg`}
+        alt="Skiff racing on Cazenovia Lake"
+        class="w-full h-full object-cover"
+      />
+    </div>
+
+    <div>
+      <p style="font-family:'Montserrat',sans-serif;font-size:0.65rem;letter-spacing:0.2em;" class="text-[#C9A96E] uppercase mb-6">July 1887</p>
+      <h2 style="font-family:'Cormorant Garamond',serif;font-size:2.2rem;font-weight:300;line-height:1.2;" class="text-[#1B2A4A] mb-6">A Presidential Visit</h2>
+      <div class="h-px w-10 bg-[#C9A96E] mb-6"></div>
+      <p style="font-family:'Cormorant Garamond',serif;font-size:1.1rem;font-weight:300;line-height:1.9;" class="text-[#3D3835]/75 mb-5">
+        In July 1887, President and Mrs. Grover Cleveland were guests of the Owahgena — arriving by a fleet of steamers, sail yachts, and rowboats, nearly four hundred in number, decorated with Japanese lanterns. The lake that evening was, by all accounts, spectacular.
+      </p>
+      <p style="font-family:'Cormorant Garamond',serif;font-size:1.1rem;font-weight:300;line-height:1.9;" class="text-[#3D3835]/75">
+        These Lake Fêtes were the social touchstone of Cazenovia summers. A correspondent for <em>The Times</em> of London had already noted: <em>"Life seems so roseate under these halcyon conditions. It is inconceivable that the glamour will ever wear off."</em>
+      </p>
+    </div>
+
+  </section>
+
+
+  <!-- ══ PHOTO STRIP ════════════════════════════════════════════════ -->
+  <div class="grid grid-cols-4 h-52 gap-px bg-[#C9A96E]/20">
+    <div class="overflow-hidden">
+      <img src={`${h}/800px-Grover_Cleveland_-_NARA_-_518139_%28cropped%29.jpg`} alt="President Grover Cleveland" class="w-full h-full object-cover object-top grayscale hover:grayscale-0 transition-all duration-500" />
+    </div>
+    <div class="overflow-hidden">
+      <img src={`${h}/WoltersLedyar.jpg`} alt="Wolters Ledyard" class="w-full h-full object-cover grayscale hover:grayscale-0 transition-all duration-500" />
+    </div>
+    <div class="overflow-hidden">
+      <img src={`${h}/Barrel%20race%20in%20Outlet%201893.jpg`} alt="Barrel race, Outlet 1893" class="w-full h-full object-cover grayscale hover:grayscale-0 transition-all duration-500" />
+    </div>
+    <div class="overflow-hidden">
+      <img src={`${h}/carpclubhouse.jpg`} alt="Carpenter Clubhouse" class="w-full h-full object-cover grayscale hover:grayscale-0 transition-all duration-500" />
+    </div>
+  </div>
+
+
+  <!-- ══ SECTION 3: REBIRTH 1916 ════════════════════════════════════ -->
+  <section class="max-w-6xl mx-auto px-6 py-20 grid grid-cols-1 md:grid-cols-2 gap-16 items-center">
+
+    <div>
+      <p style="font-family:'Montserrat',sans-serif;font-size:0.65rem;letter-spacing:0.2em;" class="text-[#C9A96E] uppercase mb-6">1916 &ndash; 1917</p>
+      <h2 style="font-family:'Cormorant Garamond',serif;font-size:2.2rem;font-weight:300;line-height:1.2;" class="text-[#1B2A4A] mb-6">The Club Is Reborn</h2>
+      <div class="h-px w-10 bg-[#C9A96E] mb-6"></div>
+      <p style="font-family:'Cormorant Garamond',serif;font-size:1.1rem;font-weight:300;line-height:1.9;" class="text-[#3D3835]/75 mb-5">
+        After the Owahgena changed hands and sat dormant for years, a group of members gathered at "The Oaks" in 1911 with a simple purpose: to bring the Club back. On November 9, 1916, the Cazenovia Club Corporation was incorporated — <em>"to promote social enjoyment and intercourse amongst the members."</em>
+      </p>
+      <p style="font-family:'Cormorant Garamond',serif;font-size:1.1rem;font-weight:300;line-height:1.9;" class="text-[#3D3835]/75">
+        The formal opening was April 17, 1917. The original boathouse — the same building Ledyard built in 1885 — was home again. The wooden tables upstairs, set for Ledyard's fêtes and Cleveland's visit, are still in use today.
+      </p>
+    </div>
+
+    <div class="h-[380px] overflow-hidden rounded-sm">
+      <img
+        src={`${h}/reborn.jpg`}
+        alt="The Cazenovia Club reborn, 1917"
+        class="w-full h-full object-cover"
+      />
+    </div>
+
+  </section>
+
+
+  <!-- ══ SECTION 4: FULL-BLEED QUOTE ══════════════════════════════ -->
+  <section class="relative h-[50vh] min-h-[360px] overflow-hidden flex items-center">
+    <img
+      src={`${h}/dec5.jpg`}
+      alt="Shingled Dec. 5, 1924"
+      class="absolute inset-0 w-full h-full object-cover"
+    />
+    <div class="absolute inset-0 bg-[#1B2A4A]/65"></div>
+    <div class="relative z-10 max-w-3xl mx-auto px-6 text-center">
+      <p style="font-family:'Cormorant Garamond',serif;font-size:clamp(1.3rem,3vw,2rem);font-weight:300;line-height:1.6;" class="text-white/90 italic mb-4">
+        "Shingled Dec. 5, 1924. Cold.<br />Lake frozen over for the first today."
+      </p>
+      <p style="font-family:'Montserrat',sans-serif;font-size:0.6rem;letter-spacing:0.15em;" class="text-[#C9A96E] uppercase">Message found in the walls during 1983 renovations</p>
+    </div>
+  </section>
+
+
+  <!-- ══ SECTION 5: SOCIAL LIFE ════════════════════════════════════ -->
+  <section class="max-w-6xl mx-auto px-6 py-20 grid grid-cols-1 md:grid-cols-2 gap-16 items-center">
+
+    <div class="h-[420px] overflow-hidden rounded-sm">
+      <img src={`${h}/costumeparty.jpg`} alt="Costume Party at the Cazenovia Club" class="w-full h-full object-cover" />
+    </div>
+
+    <div>
+      <p style="font-family:'Montserrat',sans-serif;font-size:0.65rem;letter-spacing:0.2em;" class="text-[#C9A96E] uppercase mb-6">A Century of Evenings</p>
+      <h2 style="font-family:'Cormorant Garamond',serif;font-size:2.2rem;font-weight:300;line-height:1.2;" class="text-[#1B2A4A] mb-6">Saturday Nights<br /><em>Under the Rafters</em></h2>
+      <div class="h-px w-10 bg-[#C9A96E] mb-6"></div>
+      <p style="font-family:'Cormorant Garamond',serif;font-size:1.1rem;font-weight:300;line-height:1.9;" class="text-[#3D3835]/75 mb-5">
+        From the 1930s onward, Saturday evening dinner-dances defined the Club's social calendar. Long dresses, gloves, tuxedos — the dress code was taken seriously, as was the Costume Party, an annual tradition that has seen members arrive as Rolling Rock beer cans, Edgar Degas ballerinas, and, in 1953, with actress Eva Gabor as the judge.
+      </p>
+      <p style="font-family:'Cormorant Garamond',serif;font-size:1.1rem;font-weight:300;line-height:1.9;" class="text-[#3D3835]/75">
+        During World War II, with no bands available, records were played — and on some Saturday nights, those records sailed around the room. The tradition of dressing for dinner continues.
+      </p>
+    </div>
+
+  </section>
+
+
+  <!-- ══ SECTION 6: TENNIS ═════════════════════════════════════════ -->
+  <section class="bg-[#1B2A4A]">
+    <div class="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-2">
+
+      <div class="h-[440px] md:h-auto overflow-hidden">
+        <img src={`${h}/historic_tennis.jpg`} alt="Tennis at the Cazenovia Club" class="w-full h-full object-cover" />
+      </div>
+
+      <div class="px-12 py-16 flex flex-col justify-center">
+        <p style="font-family:'Montserrat',sans-serif;font-size:0.65rem;letter-spacing:0.2em;" class="text-[#C9A96E] uppercase mb-6">Since 1888</p>
+        <h2 style="font-family:'Cormorant Garamond',serif;font-size:2.2rem;font-weight:300;line-height:1.2;" class="text-white mb-6">Tennis</h2>
+        <div class="h-px w-10 bg-[#C9A96E] mb-6"></div>
+        <p style="font-family:'Cormorant Garamond',serif;font-size:1.1rem;font-weight:300;line-height:1.9;" class="text-white/70 mb-5">
+          Tennis has been part of the Club since the Owahgena's earliest years. By 1902, the September tournament drew seventy-five entrants. The dress code was absolute: white. <em>"Bleach your whites"</em> was the Kaleidoscope's annual admonition, printed without irony for decades.
+        </p>
+        <p style="font-family:'Cormorant Garamond',serif;font-size:1.1rem;font-weight:300;line-height:1.9;" class="text-white/70">
+          Among the Club's tennis instructors: Walter Van Tilburg Clark, the English teacher who would later write <em>The Ox-Bow Incident</em>. The courts today continue the tradition.
+        </p>
+      </div>
+
+    </div>
+  </section>
+
+
+  <!-- ══ PHOTO STRIP 2 ══════════════════════════════════════════════ -->
+  <div class="grid grid-cols-3 h-64 gap-px bg-[#C9A96E]/20">
+    <div class="overflow-hidden">
+      <img src={`${h}/cazclub-0532.jpg`} alt="Cazenovia Club" class="w-full h-full object-cover hover:scale-105 transition-transform duration-700" />
+    </div>
+    <div class="overflow-hidden">
+      <img src={`${h}/caz_club_laborday_2013-7.jpg`} alt="Labor Day at the Club" class="w-full h-full object-cover hover:scale-105 transition-transform duration-700" />
+    </div>
+    <div class="overflow-hidden">
+      <img src={`${h}/cc_tennis-4.jpg`} alt="Cazenovia Club" class="w-full h-full object-cover hover:scale-105 transition-transform duration-700" />
+    </div>
+  </div>
+
+
+  <!-- ══ CLOSING QUOTE ══════════════════════════════════════════════ -->
+  <section class="max-w-3xl mx-auto px-6 py-24 text-center">
+    <div class="flex items-center gap-4 justify-center mb-10">
+      <div class="h-px w-16 bg-[#C9A96E]"></div>
+      <div class="w-1 h-1 rounded-full bg-[#C9A96E]"></div>
+      <div class="h-px w-16 bg-[#C9A96E]"></div>
+    </div>
+    <blockquote style="font-family:'Cormorant Garamond',serif;font-size:clamp(1.3rem,2.5vw,1.7rem);font-weight:300;line-height:1.7;" class="text-[#1B2A4A] italic mb-6">
+      "It is only a simple place that may gratify the tastes and serve the convenience of those who like quiet ways."
+    </blockquote>
+    <p style="font-family:'Montserrat',sans-serif;font-size:0.65rem;letter-spacing:0.15em;" class="text-[#C9A96E] uppercase mb-12">Lamburtus Wolters Ledyard, 1885</p>
+    <p style="font-family:'Cormorant Garamond',serif;font-size:1.1rem;font-weight:300;line-height:1.9;" class="text-[#3D3835]/70 mb-16">
+      One hundred and sixty years on, that remains the ambition.
+    </p>
+
+    <div class="border-t border-[#C9A96E]/20 pt-14">
+      <p style="font-family:'Montserrat',sans-serif;font-size:0.65rem;letter-spacing:0.2em;" class="text-[#C9A96E] uppercase mb-5">Help Us Preserve the Story</p>
+      <p style="font-family:'Cormorant Garamond',serif;font-size:1.1rem;font-weight:300;line-height:1.9;" class="text-[#3D3835]/70 mb-8">
+        Do you have photographs, letters, programs, or memories from the Club's past?<br />We would love to hear from you.
+      </p>
+      <a
+        href="mailto:info@cazenoviaclub.org"
+        class="btn-primary inline-block"
+      >
+        Share Your History
+      </a>
+    </div>
+  </section>
+
+</Layout>

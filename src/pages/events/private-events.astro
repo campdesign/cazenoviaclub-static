@@ -1,0 +1,138 @@
+---
+import Layout from '../../layouts/Layout.astro';
+
+const folder = "/images/weddings%20and%20events";
+---
+
+<Layout title="Private Events" description="Host your private party or special event at the Cazenovia Club — exclusively for members.">
+
+  <!-- ══ PAGE HEADER ═══════════════════════════════════════════════ -->
+  <div class="relative h-[55vh] min-h-[380px] overflow-hidden flex items-end">
+    <img
+      src={`${folder}/IMG_4512.jpg`}
+      alt="Private event at the Cazenovia Club"
+      class="absolute inset-0 w-full h-full object-cover object-center"
+    />
+    <div class="absolute inset-0 bg-gradient-to-t from-[#1B2A4A]/80 via-[#1B2A4A]/30 to-transparent"></div>
+    <div class="relative z-10 max-w-4xl mx-auto px-6 pb-12 w-full">
+      <p style="font-family:'Montserrat',sans-serif;font-size:0.65rem;letter-spacing:0.2em;" class="text-[#C9A96E] uppercase mb-3">Members Only</p>
+      <h1 style="font-family:'Cormorant Garamond',serif;font-size:clamp(2.2rem,5vw,3.8rem);font-weight:300;line-height:1.1;" class="text-white">Private Events<br /><em>&amp; Special Occasions</em></h1>
+    </div>
+  </div>
+
+
+  <!-- ══ INTRO ══════════════════════════════════════════════════════ -->
+  <section class="max-w-3xl mx-auto px-6 py-20 text-center">
+    <div class="flex items-center gap-4 justify-center mb-10">
+      <div class="h-px w-16 bg-[#C9A96E]"></div>
+      <div class="w-1 h-1 rounded-full bg-[#C9A96E]"></div>
+      <div class="h-px w-16 bg-[#C9A96E]"></div>
+    </div>
+    <h2 style="font-family:'Cormorant Garamond',serif;font-size:clamp(1.6rem,3vw,2.2rem);font-weight:300;line-height:1.3;" class="text-[#1B2A4A] mb-8">
+      The Club, exclusively yours<br /><em>for an evening</em>
+    </h2>
+    <p style="font-family:'Cormorant Garamond',serif;font-size:1.15rem;font-weight:300;line-height:1.9;" class="text-[#3D3835]/75 mb-6">
+      Members of the Cazenovia Club may reserve the clubhouse for private parties, weddings, milestone celebrations, and intimate gatherings. The upstairs dining room — with its timber rafters, ship lanterns, and lake views — offers a setting that no hotel ballroom can replicate.
+    </p>
+    <p style="font-family:'Cormorant Garamond',serif;font-size:1.15rem;font-weight:300;line-height:1.9;" class="text-[#3D3835]/75">
+      Our professional staff handles every detail, from candlelit table settings to custom menus. The lakeside terrace, the bar, and the full Club grounds are available to your guests for the evening.
+    </p>
+  </section>
+
+
+  <!-- ══ MOSAIC 1: big left + two right ════════════════════════════ -->
+  <div class="max-w-6xl mx-auto px-6 mb-4">
+    <div class="grid grid-cols-2 grid-rows-2 gap-3 h-[560px]">
+      <div class="row-span-2 overflow-hidden rounded-sm">
+        <img src={`${folder}/IMG_9592.jpg`} alt="Private dining" class="w-full h-full object-cover hover:scale-105 transition-transform duration-700" />
+      </div>
+      <div class="overflow-hidden rounded-sm">
+        <img src={`${folder}/IMG_2249.PNG`} alt="Special event" class="w-full h-full object-cover hover:scale-105 transition-transform duration-700" />
+      </div>
+      <div class="overflow-hidden rounded-sm">
+        <img src={`${folder}/IMG_4399.jpg`} alt="Club celebration" class="w-full h-full object-cover hover:scale-105 transition-transform duration-700" />
+      </div>
+    </div>
+  </div>
+
+
+  <!-- ══ MOSAIC 2: three equal ══════════════════════════════════════ -->
+  <div class="max-w-6xl mx-auto px-6 mb-4">
+    <div class="grid grid-cols-3 gap-3 h-[320px]">
+      <div class="overflow-hidden rounded-sm">
+        <img src={`${folder}/IMG_4401.jpg`} alt="Event at the Club" class="w-full h-full object-cover hover:scale-105 transition-transform duration-700" />
+      </div>
+      <div class="overflow-hidden rounded-sm">
+        <img src={`${folder}/IMG_2835.jpg`} alt="Private party" class="w-full h-full object-cover hover:scale-105 transition-transform duration-700" />
+      </div>
+      <div class="overflow-hidden rounded-sm">
+        <img src={`${folder}/IMG_4556.jpg`} alt="Celebration at Cazenovia Club" class="w-full h-full object-cover hover:scale-105 transition-transform duration-700" />
+      </div>
+    </div>
+  </div>
+
+
+  <!-- ══ MOSAIC 3: two small left + big right ═══════════════════════ -->
+  <div class="max-w-6xl mx-auto px-6 mb-16">
+    <div class="grid grid-cols-2 grid-rows-2 gap-3 h-[480px]">
+      <div class="overflow-hidden rounded-sm">
+        <img src={`${folder}/IMG_4598.jpg`} alt="Lakeside event" class="w-full h-full object-cover hover:scale-105 transition-transform duration-700" />
+      </div>
+      <div class="row-span-2 overflow-hidden rounded-sm">
+        <img src={`${folder}/IMG_9641.jpg`} alt="Evening celebration" class="w-full h-full object-cover hover:scale-105 transition-transform duration-700" />
+      </div>
+      <div class="overflow-hidden rounded-sm">
+        <img src={`${folder}/IMG_5349.jpg`} alt="Club gathering" class="w-full h-full object-cover hover:scale-105 transition-transform duration-700" />
+      </div>
+    </div>
+  </div>
+
+
+  <!-- ══ DETAILS ════════════════════════════════════════════════════ -->
+  <section class="bg-[#1B2A4A]">
+    <div class="max-w-5xl mx-auto px-6 py-20 grid grid-cols-1 md:grid-cols-3 gap-12">
+
+      <div class="text-center">
+        <div class="w-8 h-px bg-[#C9A96E] mx-auto mb-6"></div>
+        <h3 style="font-family:'Cormorant Garamond',serif;font-size:1.5rem;font-weight:300;" class="text-white mb-4">The Setting</h3>
+        <p style="font-family:'Cormorant Garamond',serif;font-size:1rem;font-weight:300;line-height:1.9;" class="text-white/60">
+          The historic 1885 boathouse, upstairs dining room, Tap Room, lakeside terrace, and full Club grounds — all available for private hire.
+        </p>
+      </div>
+
+      <div class="text-center">
+        <div class="w-8 h-px bg-[#C9A96E] mx-auto mb-6"></div>
+        <h3 style="font-family:'Cormorant Garamond',serif;font-size:1.5rem;font-weight:300;" class="text-white mb-4">The Menu</h3>
+        <p style="font-family:'Cormorant Garamond',serif;font-size:1rem;font-weight:300;line-height:1.9;" class="text-white/60">
+          Custom menus crafted by our kitchen staff. From cocktail receptions to seated dinners — casual lakeside suppers to formal black-tie affairs.
+        </p>
+      </div>
+
+      <div class="text-center">
+        <div class="w-8 h-px bg-[#C9A96E] mx-auto mb-6"></div>
+        <h3 style="font-family:'Cormorant Garamond',serif;font-size:1.5rem;font-weight:300;" class="text-white mb-4">Enquiries</h3>
+        <p style="font-family:'Cormorant Garamond',serif;font-size:1rem;font-weight:300;line-height:1.9;" class="text-white/60">
+          Private events are available to members. To discuss availability and arrange a date, contact the Club Manager directly.
+        </p>
+      </div>
+
+    </div>
+  </section>
+
+
+  <!-- ══ FULL-BLEED CLOSER ══════════════════════════════════════════ -->
+  <div class="relative h-72 overflow-hidden">
+    <img
+      src={`${folder}/IMG_2561.JPEG`}
+      alt="Cazenovia Club lakeside"
+      class="absolute inset-0 w-full h-full object-cover object-center"
+    />
+    <div class="absolute inset-0 bg-[#1B2A4A]/50"></div>
+    <div class="relative z-10 h-full flex items-center justify-center text-center px-6">
+      <p style="font-family:'Cormorant Garamond',serif;font-size:clamp(1.3rem,3vw,2rem);font-weight:300;line-height:1.5;" class="text-white/90 italic">
+        A private club. A singular occasion.
+      </p>
+    </div>
+  </div>
+
+</Layout>
