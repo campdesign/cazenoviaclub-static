@@ -1,0 +1,11 @@
+{
+  "version": "0.0.1",
+  "configurations": [
+    {
+      "name": "cazenoviaclub",
+      "runtimeExecutable": "/bin/bash",
+      "runtimeArgs": ["/Users/kevinmann/Desktop/cazenoviaclub-static/.claude/dev.sh"],
+      "port": 4321
+    }
+  ]
+}

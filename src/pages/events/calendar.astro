@@ -3,35 +3,30 @@ import Layout from '../../layouts/Layout.astro';
 ---
 
 <Layout title="Events Calendar" description="A calendar of events for the Cazenovia Club season.">
-  <!-- Page Header -->
-  <div class="bg-[#32373c] text-white py-12 text-center">
-    <h1 class="text-3xl font-light tracking-wide">Events Calendar</h1>
-    <p class="text-white/70 mt-2 text-sm">A calendar of events for the season</p>
+
+  <!-- ══ HEADER ════════════════════════════════════════════════════ -->
+  <div class="bg-[#1B2A4A] py-16 text-center">
+    <p style="font-family:'Montserrat',sans-serif;font-size:0.65rem;letter-spacing:0.2em;" class="text-[#C9A96E] uppercase mb-3">Cazenovia Club</p>
+    <h1 style="font-family:'Cormorant Garamond',serif;font-size:clamp(2rem,4vw,3rem);font-weight:300;" class="text-white">Events Calendar</h1>
+    <p style="font-family:'Cormorant Garamond',serif;font-size:1rem;font-weight:300;" class="text-white/50 mt-3 italic">A calendar of events for the season</p>
   </div>
 
-  <section class="max-w-4xl mx-auto px-4 py-12">
-    <p class="text-center text-[#32373c]/70 mb-10 text-sm">
-      Stay up to date with all club events, tournaments, and social gatherings below.
-      To add events to your personal calendar, click any event in the calendar.
-    </p>
+  <section class="max-w-5xl mx-auto px-6 py-16">
 
-    <!-- Google Calendar Embed -->
-    <!-- INSTRUCTIONS: Replace the src URL below with your club's Google Calendar embed URL.
-         In Google Calendar: Settings → your calendar → "Integrate calendar" → copy the embed code iframe src. -->
-    <div class="rounded-lg overflow-hidden shadow border border-[#abb8c3]/40">
-      <iframe
-        src="https://calendar.google.com/calendar/embed?src=hoi5209c7ilvtepo3rem9de2cc%40group.calendar.google.com&ctz=America%2FNew_York&showTitle=0&showNav=1&showDate=1&showPrint=0&showTabs=0&showCalendars=0&mode=MONTH"
-        style="border:0"
-        width="100%"
-        height="600"
-        frameborder="0"
-        scrolling="no"
-        title="Cazenovia Club Events Calendar"
-      ></iframe>
-    </div>
+    <!-- Styled Calendar Embed -->
+    <iframe
+      src="https://embed.styledcalendar.com/#fywZsJFO9hIAgttJkrw1"
+      title="Styled Calendar"
+      class="styled-calendar-container"
+      style="width:100%;border:none;min-height:700px;"
+      data-cy="calendar-embed-iframe"
+    ></iframe>
+    <script async type="module" src="https://embed.styledcalendar.com/assets/parent-window.js" is:inline></script>
 
-    <p class="text-center text-[#32373c]/50 text-xs mt-4">
+    <p style="font-family:'Cormorant Garamond',serif;font-size:0.9rem;font-weight:300;" class="text-center text-[#3D3835]/40 mt-6 italic">
       Times shown in Eastern Time. Contact the club for more information about any event.
     </p>
+
   </section>
+
 </Layout>
