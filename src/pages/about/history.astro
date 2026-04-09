@@ -228,12 +228,52 @@ const h = "/images/history";
       <p style="font-family:'Cormorant Garamond',serif;font-size:1.1rem;font-weight:300;line-height:1.9;" class="text-[#3D3835]/70 mb-8">
         Do you have photographs, letters, programs, or memories from the Club's past?<br />We would love to hear from you.
       </p>
-      <a
-        href="mailto:info@cazenoviaclub.org"
-        class="btn-primary inline-block"
+      <form
+        name="history-share"
+        method="POST"
+        data-netlify="true"
+        netlify-honeypot="bot-field"
+        id="history-form"
+        class="text-left mt-8 space-y-5"
       >
-        Share Your History
-      </a>
+        <input type="hidden" name="form-name" value="history-share" />
+        <input type="hidden" name="bot-field" class="hidden" />
+
+        <div>
+          <label style="font-family:'Montserrat',sans-serif;font-size:0.6rem;letter-spacing:0.18em;" class="block text-[#C9A96E] uppercase mb-2">Your Name</label>
+          <input type="text" name="name" required
+            style="font-family:'Cormorant Garamond',serif;font-size:1rem;font-weight:300;"
+            class="w-full bg-white border border-[#C9A96E]/30 px-4 py-3 text-[#1B2A4A] focus:outline-none focus:border-[#C9A96E]" />
+        </div>
+
+        <div>
+          <label style="font-family:'Montserrat',sans-serif;font-size:0.6rem;letter-spacing:0.18em;" class="block text-[#C9A96E] uppercase mb-2">Email Address</label>
+          <input type="email" name="email" required
+            style="font-family:'Cormorant Garamond',serif;font-size:1rem;font-weight:300;"
+            class="w-full bg-white border border-[#C9A96E]/30 px-4 py-3 text-[#1B2A4A] focus:outline-none focus:border-[#C9A96E]" />
+        </div>
+
+        <div>
+          <label style="font-family:'Montserrat',sans-serif;font-size:0.6rem;letter-spacing:0.18em;" class="block text-[#C9A96E] uppercase mb-2">Your Message</label>
+          <textarea name="message" rows="4"
+            style="font-family:'Cormorant Garamond',serif;font-size:1rem;font-weight:300;"
+            class="w-full bg-white border border-[#C9A96E]/30 px-4 py-3 text-[#1B2A4A] focus:outline-none focus:border-[#C9A96E] resize-none"></textarea>
+        </div>
+
+        <button type="submit" class="btn-primary w-full">Share Your History</button>
+        <p id="history-success" class="hidden text-center text-[#1B2A4A]" style="font-family:'Cormorant Garamond',serif;font-size:1rem;font-weight:300;">Thank you — we'll be in touch.</p>
+      </form>
+
+      <script is:inline>
+        const hf = document.getElementById('history-form');
+        if (hf) hf.addEventListener('submit', async function(e) {
+          e.preventDefault();
+          const data = new FormData(hf);
+          await fetch('/', { method: 'POST', headers: {'Content-Type': 'application/x-www-form-urlencoded'}, body: new URLSearchParams(data).toString() });
+          hf.reset();
+          document.getElementById('history-success').classList.remove('hidden');
+        });
+      </script>
     </div>
   </section>
 
